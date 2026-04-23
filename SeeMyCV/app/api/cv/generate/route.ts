@@ -449,7 +449,7 @@ export async function POST(request: Request) {
       },
     });
   } catch (error) {
-    console.error('[cv/generate] Error:', error);
+    console.error('Error:', error);
     return NextResponse.json({ error: 'Failed to generate CV. Please try again.' }, { status: 500 });
   }
 }

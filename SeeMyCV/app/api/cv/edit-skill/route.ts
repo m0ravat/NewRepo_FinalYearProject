@@ -34,7 +34,7 @@ export async function PATCH(req: Request) {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error('[edit-skill] Error:', error);
+    console.error('Error:', error);
     return NextResponse.json({ error: 'Failed to update skill' }, { status: 500 });
   }
 }

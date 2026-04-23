@@ -10,7 +10,7 @@ export async function GET() {
     );
     return NextResponse.json({ templates: result.rows });
   } catch (error) {
-    console.error('[cvformats API] Error fetching templates:', error);
+    console.error('Error fetching templates:', error);
     return NextResponse.json({ error: 'Failed to fetch CV formats' }, { status: 500 });
   }
 }

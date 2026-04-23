@@ -29,7 +29,7 @@ export async function POST(request: Request) {
           `UPDATE "user" SET "isPremium" = true WHERE user_id = $1`,
           [parseInt(userId)]
         );
-        console.log('[v0] User', userId, 'upgraded to premium');
+        console.log( userId, 'upgraded to premium');
       }
     }
 

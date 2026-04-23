@@ -96,7 +96,7 @@ export async function DELETE(req: NextRequest) {
       { status: 200 }
     );
   } catch (error) {
-    console.error('[v0] Delete account error:', error);
+    console.error( error);
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }
